@@ -1,0 +1,16 @@
+# External FSM State Transition Table (Worklet 2 Format)
+# ──────────────────────────────────────────────────────────
+# This file demonstrates the CSV ingestion format for
+# Group 2 (Worklet 2) integration.
+#
+# Format: CurrentState,InputSymbol,NextState,OutputAction
+#
+CurrentState,InputSymbol,NextState,OutputAction
+S0,a,S1,Emit_X
+S0,b,S2,Emit_Y
+S1,a,S3,Emit_Z
+S1,b,S0,Emit_W
+S2,a,S0,Emit_V
+S2,b,S3,Emit_U
+S3,a,S2,Emit_T
+S3,b,S1,Emit_S
